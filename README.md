@@ -1,1 +1,1 @@
-Первая лаба
+![Garbage](garbage.png)

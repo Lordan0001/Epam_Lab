@@ -1,1 +1,1 @@
-![Garbage](garbage.png)
+![Lab](epam2.png)

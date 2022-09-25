@@ -34,7 +34,7 @@ _ **Pre-requirements:** _
 | Step | Expected result |
 | --- | --- |
 | At the top of the site click on the "Поиск" field | Focused on this field |
-| Enter "браслеты" in "Введите название товара, группы или героя" field | In the "Введитеназваниетовара, группыилигероя" field the entered text is displayed |
+| Enter "браслеты" in "Введите название товара, группы или героя" field | In the "Введите название товара, группы или героя" field the entered text is displayed |
 | Click on the hint "Браслеты" that appears | Opened the page with the results of the search for "Браслеты" |
 
 **Environment:**

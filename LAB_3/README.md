@@ -1,43 +1,53 @@
-APP URL: https://rockbastion.by
+APP URL:  https://rockbastion.by
 
 Test Cases:
 
-_ **Test ID:** _ 1
+***Test ID:*** 1
 
-_ **Title:** _ Registration with email and password
+***Title:*** Registration with email and password
 
-_ **Pre-requirements:** _
+***Pre-requirements:***
 
 1. Opened registration page: https://rockbastion.by/simpleregister/
-2. Had email service: (You can use temp-email: https://tempmail.plus/ru/#! )
+1. Had email service: (You can use temp-email: https://tempmail.plus/ru/#! )
 
-| Step | Expected result |
-| --- | --- |
-| Enter email in "Email" field | In the "Email" field the entered e-mail is displayed |
-| Enter password in "Пароль" field | In the "Пароль" field the entered password is displayed as circles |
-| Enter password in "Подтвердитепароль" field | In the "Пароль" field the entered password is displayed as circles |
-| Click on button "Продолжить" | You should see next text on the page "Поздравляем! Ваша учётная запись была успешно создана." with button "Продолжить" |
+**Step:**
 
-**Environment:**
+\1. Enter email in "Email" field
 
-- **Operating system:**  Microsoft Windows 10
-- **Browser:**  Opera
+\2. Enter password in "Пароль" field
 
-_ **Test ID:** _ 2
+\3. Enter password in "Подтвердите пароль" field
 
-_ **Title:** _ Bracelet search
+\4. Click on button "Продолжить"
 
-_ **Pre-requirements:** _
-
-1. Opened main page: [https://rockbastion.by](https://rockbastion.by/)
-
-| Step | Expected result |
-| --- | --- |
-| At the top of the site click on the "Поиск" field | Focused on this field |
-| Enter "браслеты" in "Введите название товара, группы или героя" field | In the "Введите название товара, группы или героя" field the entered text is displayed |
-| Click on the hint "Браслеты" that appears | Opened the page with the results of the search for "Браслеты" |
+**Expected result**: You should see next text on the page "Поздравляем! Ваша учётная запись была успешно создана." with button "Продолжить".
 
 **Environment:**
 
-- **Operating system:**  Microsoft Windows 10
-- **Browser:**  Opera
+- **Operating system:** Microsoft Windows 10 
+- **Browser:** Opera
+
+
+***Test ID:*** 2
+
+***Title:*** Bracelet search
+
+***Pre-requirements:***
+
+1. Opened main page: <https://rockbastion.by>
+
+**Step:**
+
+\1. At the top of the site click on the "Поиск" field
+
+\2. Enter "браслеты" in "Введите название товара, группы или героя" field
+
+\3. Click on the hint "Браслеты" that appears
+
+**Expected result:** Opened the page with the results of the search for "Браслеты"
+
+**Environment:**
+
+- **Operating system:** Microsoft Windows 10
+- **Browser:** Opera

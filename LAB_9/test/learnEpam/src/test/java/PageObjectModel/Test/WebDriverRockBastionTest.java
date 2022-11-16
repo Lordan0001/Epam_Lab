@@ -1,8 +1,9 @@
+package PageObjectModel.Test;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.css.model.Value;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -21,16 +22,20 @@ public class WebDriverRockBastionTest {
     }
 
 @Test (description = "first test for rock bastion")
-    public void commonSearchTermResultsNotEmpty(){
+    public void commonSearchTermResultsAreEqual(){
 
         driver.get("https://rockbastion.by/");
         WebElement searchInput = driver.findElement(By.name("search"));
         searchInput.click();
-        searchInput.sendKeys("кольцо стальное");
+        searchInput.sendKeys("череп");
         searchInput.sendKeys(Keys.ENTER);
         //result
-        WebElement searchResult = driver.findElement(By.name("search"));
-        Assert.assertNotNull(searchResult, "search string not empty");
+
+    WebElement SearchResult = driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
+    String AttrValue = SearchResult.getAttribute("value");
+    System.out.println(AttrValue + "_____________value");
+    Assert.assertEquals(AttrValue, "череп", "search string get entered values");
+
 
     }
 

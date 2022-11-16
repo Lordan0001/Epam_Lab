@@ -4,10 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
 
-public class Home {
-    public Home(WebDriver driver) {
+public class RockBastionHome {
+    public RockBastionHome(WebDriver driver) {
         this.driver = driver;
     }
     private WebElement searchInput;

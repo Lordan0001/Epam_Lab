@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class HelloWebDriver {
@@ -42,7 +43,7 @@ public class HelloWebDriver {
 
 //        WebDriver driver = new EdgeDriver();
 //        driver.get("https://rockbastion.by/");
-//        WebElement searchInput = driver.findElement(By.xpath("/html/body/div[4]/header/div/div/div[2]/div/input"));
+//        WebElement searchInput = driver.findElement(By.name("search"));
 //        searchInput.click();
 //        searchInput.sendKeys("украшения");
 //        searchInput.sendKeys(Keys.ENTER);

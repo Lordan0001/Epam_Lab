@@ -1,5 +1,8 @@
 package PageObjectModel.Test;
 
+import PageObjectModel.Page.Home;
+import PageObjectModel.Page.Result;
+import PageObjectModel.Page.RockBastionHomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -19,22 +22,29 @@ public class WebDriverRockBastionTest {
     @BeforeMethod(alwaysRun = true)
     public void browserSetup(){
         driver = new EdgeDriver();
+
     }
 
 @Test (description = "first test for rock bastion")
     public void commonSearchTermResultsAreEqual(){
 
-        driver.get("https://rockbastion.by/");
-        WebElement searchInput = driver.findElement(By.name("search"));
-        searchInput.click();
-        searchInput.sendKeys("череп");
-        searchInput.sendKeys(Keys.ENTER);
-        //result
+//        driver.get("https://rockbastion.by/");
+//        WebElement searchInput = driver.findElement(By.name("search"));
+//        searchInput.click();
+//        searchInput.sendKeys("череп");
+//        searchInput.sendKeys(Keys.ENTER);
+//        //result
+//    WebElement SearchResult = driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
+//    String AttrValue = SearchResult.getAttribute("value");
 
-    WebElement SearchResult = driver.findElement(By.xpath("//*[@id=\"search\"]/input"));
-    String AttrValue = SearchResult.getAttribute("value");
-    System.out.println(AttrValue + "_____________value");
-    Assert.assertEquals(AttrValue, "череп", "search string get entered values");
+    Home home = new Home(driver);
+     home.OpenMainPage();
+    home.SearchTerm();
+
+ Result result = new Result(driver);
+ result.GetSearchResult();
+
+    Assert.assertEquals(result.GetSearchResult(), "череп", "search string get entered values");
 
 
     }

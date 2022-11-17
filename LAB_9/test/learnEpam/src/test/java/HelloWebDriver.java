@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class HelloWebDriver {
     public static void main(String[] args) throws InterruptedException {
 //good test
+//        WebDriver driver = new EdgeDriver();
 //        driver.get("https://rockbastion.by/");
 //        WebElement searchInput = driver.findElement(By.name("search"));
 //        searchInput.click();

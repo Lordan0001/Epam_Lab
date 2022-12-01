@@ -1,0 +1,34 @@
+package NPO.Test;
+
+import NPO.driver.DriverSingleton;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class NAME {
+  private static Logger logger = LogManager.getRootLogger();
+    private WebDriver driver;
+
+    @BeforeMethod(alwaysRun = true)
+    public void browserSetup() {
+        driver = DriverSingleton.getDriver();
+
+    }
+
+
+
+    @Test(description = "DESC")
+        public void NAME() throws InterruptedException {
+            driver.get("https://rockbastion.by/");
+
+        }
+
+
+
+    @AfterMethod(alwaysRun = true)
+    public void browserTearDown() {
+        DriverSingleton.closeDriver();
+
+    }
+}

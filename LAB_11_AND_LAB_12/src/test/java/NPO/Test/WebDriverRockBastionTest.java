@@ -1,7 +1,7 @@
-package PageObjectModel.Test;
+package NPO.Test;
 
-import PageObjectModel.Page.RockBastionHome;
-import PageObjectModel.Page.RockBastionResultSearch;
+import NPO.Page.RockBastionHome;
+import NPO.Page.RockBastionResultSearch;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
